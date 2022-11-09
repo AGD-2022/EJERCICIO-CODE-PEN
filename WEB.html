@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    
+  <meta name="viewport" content="width=device-width">
+
+  <title>CodePen - Front End Developer Playground &amp; Code Editor in the Browser</title>
+  <link rel="stylesheet" media="all" href="carpeta/global.css">
+  <link rel="stylesheet" media="all" href="carpeta/page-MQ.css">
+  <link rel="stylesheet" media="screen" href="carpeta/home.css">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="https://codepen.io/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://codepen.io/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://codepen.io/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://codepen.io/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://codepen.io/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://codepen.io/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://codepen.io/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://codepen.io/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://codepen.io/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="https://codepen.io/favicons/favicon-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://codepen.io/favicons/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="https://codepen.io/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://codepen.io/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="https://codepen.io/favicons/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#603cba">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for CodePen Editor&#39;s Picks" href="https://codepen.io/picks/feed">
+
+  <meta property="og:image" content="https://production-assets.codepen.io/assets/social/facebook-default-05cf522ae1d4c215ae0f09d866d97413a2204b6c9339c6e7a1b96ab1d4a7340f.png">
+<meta property="og:title" content="CodePen">
+<meta property="og:description" content="A front end web development playground.">
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico">
+  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111">
+<link rel="stylesheet" href="carpeta/allmin.css">
+  </head>
+
+<body class="
+    logged-out
+
+
+    not-team
+">
+    <header class="main-header">
+
+  <h1 class="logo header-chunk">
+
+  <a href="carpeta/logo.avif" class="small-screen-logo">
+    <svg class="logoavif">
+      <use xlink:href="https://codepen.io/"></use>
+    </svg>
+  </a>
+
+  <a href="https://codepen.io/" class="large-screen-logo">
+    CodePen
+  </a>
+
+</h1>
+
+  <nav class="header-chunk primary-nav fill-space priority-nav" id="secondary-primary-nav" style="overflow: visible;">
+    <ul style="white-space: nowrap;">
+      <li class="primary primary-pens" id="primary-nav-pens"><a href="https://codepen.io/pens/">Pens</a></li>
+      <li class="primary primary-projects"><a href="https://codepen.io/projects/">Projects</a></li>
+      <li class="primary primary-posts"><a href="https://codepen.io/posts/">Posts</a></li>
+      <li class="primary primary-collections primary-last hide"><a href="https://codepen.io/collections/">Collections</a></li>
+      <li class="primary-spark"><a href="https://codepen.io/spark/">Spark&nbsp;&nbsp;<i class="arrow"></i></a></li>
+          </ul>
+  </nav>
+
+
+  <div class="header-chunk primary-actions">
+    <button class="button button-medium create-button" data-dropdown="#create-dropdown">
+      Create &nbsp;<i class="arrowblue"></i>
+    </button>
+  </div>
+  <i class="fa-regular fa-magnifying-glass"></i>
+  
+  <div id="user-header-dropdown" class="user-stuff header-chunk">
+
+    <a id="login-button" class="button button-medium login-button" href="https://codepen.io/login">Log In</a>
+
+    <a href="https://codepen.io/accounts/signup" class="button button-medium signup-button">Sign Up</a>
+  </div>
+
+
+
+
+    <div class="header-search header-chunk" id="header-search" role="search">
+
+  <a href="https://codepen.io/#0" class="header-search-button" id="header-search-button">
+    <svg class="header-icon-mag" width="25px" height="65px">
+      <use xlink:href="#mag"></use>
+    </svg>
+  </a>
+
+</div>
+
+
+
+</div></header>
+
+<div class="header-search-form" id="header-search-form-wrap">
+    <form id="search-form" method="get" action="https://codepen.io/search/pens" class="search-form group" role="search">
+
+  <div id="search-elements-div">
+    <div class="group">
+      <label class="screen-reader-text" for="q">Search</label>
+
+      <input type="search" name="q" id="q" required="true" value="" placeholder="Search" class="search-input">
+
+        <input type="hidden" name="limit" value="all">
+
+      <input type="submit" class="button search-button visually-hidden" value="Search">
+    </div>
+
+      <div class="advanced-options group flex-grid" id="advanced-options" data-grid-type="fill">
+
+  <div class="search-option search-option-radio-row">
+
+    <div>
+      <input name="type" type="radio" value="type-pens" id="type-pens" checked="">
+      <label for="type-pens">Pens</label>
+    </div>
+
+    <div>
+      <input name="type" type="radio" value="type-projects" id="type-projects">
+      <label for="type-projects">Projects</label>
+    </div>
+
+    <div>
+      <input name="type" type="radio" value="type-posts" id="type-posts">
+      <label for="type-posts">Posts</label>
+    </div>
+
+    <div>
+      <input name="type" type="radio" value="type-collections" id="type-collections">
+      <label for="type-collections">Collections</label>
+    </div>
+
+
+  </div>
+
+</div>
+  </div>
+
+</form>
+
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="home-section home-promo">
+
+  <div class="promo-content">
+
+    <div class="promo-text">
+
+      <h1 class="promo-headline">CodePen is a <strong>social development environment</strong> for front-end designers and developers. 👋</h1>
+
+      <p class="promo-tagline">It’s the best place to build and deploy a website, show off your work, build test cases, and find inspiration. </p>
+
+      <p class="calls-to-action">
+        <a href="https://codepen.io/accounts/signup" class="button big green">
+          Sign Up
+        </a>
+        <a href="https://codepen.io/hello/" class="button big button-dark">
+          Learn More
+        </a>
+      </p>
+
+    </div>
+
+    <div class="projects-promo">
+      <p class="projects-promo-text">This is <a href="https://codepen.io/pro/projects/">CodePen Projects</a>!</p>
+      <img class="projects-screenshot" src="carpeta/ejercicio.png" alt="Projects screenshot">
+    </div>
+
+  </div>
+
+  <div class="promo-landing-page-links">
+    <a href="https://codepen.io/pro/teams/">
+      <span class="codepen-for">CodePen for</span>
+      <span class="promo-for">Teams</span>
+    </a>
+    <a href="https://codepen.io/education/">
+      <span class="codepen-for">CodePen for</span>
+      <span class="promo-for">Education</span>
+    </a>
+    <a href="https://codepen.io/pro/privacy/">
+      <span class="codepen-for">CodePen for</span>
+      <span class="promo-for">Privacy</span>
+    </a>
+    <a href="https://codepen.io/blogging/">
+      <span class="codepen-for">CodePen for</span>
+      <span class="promo-for">Writing</span>
+    </a>
+  </div>
+
+</section>
+
+
+
+</div>
+
+</div>
+
+
+
+<footer class="link-footer" id="link-footer">
+
+  <div class="width-wrapper" id="link-footer-width-wrapper">
+
+    <nav class="link-footer-links link-footer-codepen-links" id="link-footer-codepen-links">
+      <strong>CodePen</strong>
+      <a href="https://codepen.io/about/">About</a>
+      <a href="http://blog.codepen.io/">Blog</a>
+      <a href="http://blog.codepen.io/radio/">Podcast</a>
+      <a href="https://codepen.io/advertising/">Advertising</a>
+      <a href="http://blog.codepen.io/documentation">Docs</a>
+      <a href="https://codepen.io/support/">Support</a>
+      <a href="http://blog.codepen.io/shop/">Shop</a>
+    </nav>
+
+    <nav class="link-footer-links link-footer-community-links" id="link-footer-community-links">
+      <strong>Community</strong>
+      <a href="https://codepen.io/jobs/">Jobs</a>
+      <a href="http://blog.codepen.io/meetups/">Meetups</a>
+      <a href="https://codepen.io/pro/teams/">Teams</a>
+      <a href="https://codepen.io/patterns/">Patterns</a>
+      <a href="https://blog.codepen.io/legal/code-conduct/">Code of Conduct</a>
+    </nav>
+
+    <nav class="link-footer-links link-footer-social-links" id="link-footer-social-links">
+      <strong>Social</strong>
+      <a href="https://twitter.com/CodePen">Twitter</a>
+      <a href="https://www.facebook.com/CodePen/">Facebook</a>
+      <a href="https://www.flickr.com/photos/codepen/">Flickr</a>
+      <a href="https://www.instagram.com/codepen/">Instagram</a>
+    </nav>
+
+
+
+
+    <div class="copyright" id="link-footer-copyright">
+      <h1 class="logo header-chunk">
+
+  <a href="https://codepen.io/" class="small-screen-logo">
+    <svg class="icon-codepen-box">
+      <use xlink:href="#codepen-box"></use>
+    </svg>
+  </a>
+
+  <a href="https://codepen.io/" class="large-screen-logo">
+    CodePen
+  </a>
+
+</h1>
+      <p>©2022 CodeMyPen</p>
+      <p class="slogan"><em>Demo and i make it happen :).</em></p>
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+
+
+
+  <div id="popup-overlay" class="overlay popup-overlay"></div>
+  <div id="modal-overlay" class="overlay modal-overlay"></div>
+
+    <input type="hidden" id="init-data" value="{&quot;__mobile&quot;:false,&quot;__cookieUsed&quot;:false,&quot;__turnOffJS&quot;:false,&quot;__CPDATA&quot;:{&quot;host&quot;:&quot;codepen.io&quot;,&quot;asset_host&quot;:&quot;production-assets.codepen.io&quot;,&quot;embed_asset_host&quot;:&quot;production-assets.codepen.io&quot;,&quot;host_port&quot;:&quot;&quot;,&quot;host_secure_subdomain&quot;:&quot;s.&quot;,&quot;iframe_sandbox&quot;:&quot;allow-scripts allow-pointer-lock allow-same-origin allow-popups allow-modals allow-forms&quot;},&quot;__env&quot;:&quot;prod&quot;,&quot;__browserName&quot;:&quot;Generic Browser&quot;,&quot;__remote_addr&quot;:&quot;207.241.226.208&quot;,&quot;__user&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;username&quot;:&quot;anon&quot;,&quot;base_url&quot;:&quot;/anon/&quot;,&quot;current_team_id&quot;:0,&quot;paid&quot;:false,&quot;tier&quot;:0,&quot;session_hash&quot;:&quot;&quot;},&quot;__pages&quot;:[{&quot;grid_id&quot;:&quot;picks-grid&quot;,&quot;grid_url&quot;:&quot;/home/grid/&quot;,&quot;page_type&quot;:&quot;picks&quot;,&quot;page&quot;:1,&quot;per_page&quot;:6,&quot;js_global_name&quot;:&quot;__pages&quot;,&quot;prev_grid_url&quot;:&quot;/home/grid/&quot;,&quot;next_grid_url&quot;:&quot;/home/grid/2/&quot;,&quot;page_url&quot;:&quot;/&quot;,&quot;page_is_main_grid&quot;:true}],&quot;__pageType&quot;:&quot;home&quot;}">
+
+</body></html>
